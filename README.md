@@ -9,7 +9,7 @@ The `Containerfile` downloads a pinned release of `podman` from GitHub and produ
 The image is built for `linux/amd64` and `linux/arm64` via GitHub Actions and published to the GitHub Container Registry at:
 
 ```
-ghcr.io/cpressland/oci-podman:latest
+ghcr.io/thredd-platform/oci-podman:latest
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ ghcr.io/cpressland/oci-podman:latest
 Copy the binary into your devcontainer image:
 
 ```dockerfile
-COPY --from=ghcr.io/cpressland/oci-podman:latest / /
+COPY --from=ghcr.io/thredd-platform/oci-podman:latest / /
 ```
 
 ## Version updates
